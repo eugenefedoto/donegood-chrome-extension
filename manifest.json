@@ -1,7 +1,27 @@
 {
     "manifest_version": 2,
-    
     "name": "DoneGood",
-    
-    "version": "1.0.0-alpha"
+    "version": "0.1.0",
+
+    "description": "Shows a DoneGood popup whenever visiting H&M or Levi's.",
+    "icons": {
+        "16": "icon.png", //Used as the favicon for an extension's pages
+        "48": "icon.png", //Used on the extension management page
+        "128": "icon.png" //Used during installation & in the Chrome Web Store
+    },
+
+    "content_scripts": [
+        // Levi's and H&M
+        {
+            "matches": ["http://www.levi.com/*/*/", "https://www.hm.com/*/"],
+            "css": ["bootstrap/bootstrap-theme.min.css"],
+            "js": ["jquery-3.1.1.min.js", "bootstrap/bootstrap.min.js", "modal.js"]
+            //"run_at": "document_end"
+        }
+    ],
+
+
+    "web_accessible_resources": [
+        "spinner_progress.gif"
+    ]
 }
