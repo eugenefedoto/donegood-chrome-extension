@@ -16,4 +16,4 @@ Installation:
 
 How to Use:
 
-Visit www.hm.com or www.levi.com. The extension currently only works with U.S. subdomains. I.E., www.levi.com/US/en_US/ and www.hm.com/us/
+Visit www.hm.com or www.levi.com. The extension currently only works with U.S. subdomains. I.E., www.levi.com/US/en_US/ and www.hm.com/us/. You should only see a modal popup that links to the DoneGood website.
